@@ -1,4 +1,4 @@
-using System.Threading;
+[using System.Threading;
 
 namespace Tatu
 {
@@ -41,11 +41,26 @@ namespace Tatu
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start();
         }
-        
+
         private void biometriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
             f1 = new Thread(Abrir_Biometria!);
+            f1.SetApartmentState(ApartmentState.STA);
+            f1.Start();
+        } 
+        private void equipeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            f1 = new Thread(Abrir_Equipe!);
+            f1.SetApartmentState(ApartmentState.STA);
+            f1.Start();
+        }
+        
+        private void cientistaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            f1 = new Thread(Abrir_Cientista!);
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start();
         }
@@ -77,5 +92,18 @@ namespace Tatu
             Application.Run(new Biometria());
         }
 
+        private void Abrir_Equipe(object obj)
+        {
+            Application.Run(new Equipe());
+        }
+
+        private void Abrir_Cientista(object obj)
+        {
+            Application.Run(new Cientista());
+        }
+
+        
+
+       
     }
 }

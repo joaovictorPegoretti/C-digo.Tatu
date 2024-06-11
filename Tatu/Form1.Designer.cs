@@ -96,12 +96,14 @@
             equipeToolStripMenuItem.Name = "equipeToolStripMenuItem";
             equipeToolStripMenuItem.Size = new Size(55, 20);
             equipeToolStripMenuItem.Text = "Equipe";
+            equipeToolStripMenuItem.Click += equipeToolStripMenuItem_Click;
             // 
             // cientistaToolStripMenuItem
             // 
             cientistaToolStripMenuItem.Name = "cientistaToolStripMenuItem";
             cientistaToolStripMenuItem.Size = new Size(65, 20);
             cientistaToolStripMenuItem.Text = "Cientista";
+            cientistaToolStripMenuItem.Click += cientistaToolStripMenuItem_Click;
             // 
             // Menu
             // 
