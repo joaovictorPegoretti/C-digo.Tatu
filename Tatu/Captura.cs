@@ -16,6 +16,7 @@ namespace Tatu
         public Captura()
         {
             InitializeComponent();
+            groupBox_Aviso.Visible = false;
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -55,11 +56,27 @@ namespace Tatu
             Application.Run(new Ficha_do_Tatu());
         }
 
-        private void Abrir_Menu( object obj)
+        private void Abrir_Menu(object obj)
         {
             Application.Run(new Menu());
         }
 
-        
-    }
+        private void button_Proximo_Click(object sender, EventArgs e)
+        {
+            if (groupBox_Aviso.Visible == true)
+            {
+
+                groupBox_Aviso.Visible = false;
+                groupBox_Aviso.Visible = false;
+
+            }
+            else
+            {
+
+                groupBox_Aviso.Visible = true;
+                groupBox_Aviso.Visible = true;
+            }
+        }
+    }    
 }
+

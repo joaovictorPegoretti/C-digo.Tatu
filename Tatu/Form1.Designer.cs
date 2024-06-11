@@ -33,14 +33,16 @@
             tatuToolStripMenuItem = new ToolStripMenuItem();
             Ficha_Campo = new ToolStripMenuItem();
             fichaAnestesicaToolStripMenuItem = new ToolStripMenuItem();
-            equipeToolStripMenuItem = new ToolStripMenuItem();
             amostrasToolStripMenuItem = new ToolStripMenuItem();
+            biometriaToolStripMenuItem = new ToolStripMenuItem();
+            equipeToolStripMenuItem = new ToolStripMenuItem();
+            cientistaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { capturaToolStripMenuItem, tatuToolStripMenuItem, equipeToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { capturaToolStripMenuItem, tatuToolStripMenuItem, equipeToolStripMenuItem, cientistaToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(869, 24);
@@ -56,7 +58,7 @@
             // 
             // tatuToolStripMenuItem
             // 
-            tatuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { Ficha_Campo, fichaAnestesicaToolStripMenuItem, amostrasToolStripMenuItem });
+            tatuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { Ficha_Campo, fichaAnestesicaToolStripMenuItem, amostrasToolStripMenuItem, biometriaToolStripMenuItem });
             tatuToolStripMenuItem.Name = "tatuToolStripMenuItem";
             tatuToolStripMenuItem.Size = new Size(41, 20);
             tatuToolStripMenuItem.Text = "Tatu";
@@ -64,16 +66,30 @@
             // Ficha_Campo
             // 
             Ficha_Campo.Name = "Ficha_Campo";
-            Ficha_Campo.Size = new Size(180, 22);
+            Ficha_Campo.Size = new Size(161, 22);
             Ficha_Campo.Text = "Ficha do Tatu";
             Ficha_Campo.Click += Ficha_Campo_Click;
             // 
             // fichaAnestesicaToolStripMenuItem
             // 
             fichaAnestesicaToolStripMenuItem.Name = "fichaAnestesicaToolStripMenuItem";
-            fichaAnestesicaToolStripMenuItem.Size = new Size(180, 22);
+            fichaAnestesicaToolStripMenuItem.Size = new Size(161, 22);
             fichaAnestesicaToolStripMenuItem.Text = "Ficha Anestesica";
             fichaAnestesicaToolStripMenuItem.Click += fichaAnestesicaToolStripMenuItem_Click;
+            // 
+            // amostrasToolStripMenuItem
+            // 
+            amostrasToolStripMenuItem.Name = "amostrasToolStripMenuItem";
+            amostrasToolStripMenuItem.Size = new Size(161, 22);
+            amostrasToolStripMenuItem.Text = "Amostras";
+            amostrasToolStripMenuItem.Click += amostrasToolStripMenuItem_Click;
+            // 
+            // biometriaToolStripMenuItem
+            // 
+            biometriaToolStripMenuItem.Name = "biometriaToolStripMenuItem";
+            biometriaToolStripMenuItem.Size = new Size(161, 22);
+            biometriaToolStripMenuItem.Text = "Biometria";
+            biometriaToolStripMenuItem.Click += biometriaToolStripMenuItem_Click;
             // 
             // equipeToolStripMenuItem
             // 
@@ -81,12 +97,11 @@
             equipeToolStripMenuItem.Size = new Size(55, 20);
             equipeToolStripMenuItem.Text = "Equipe";
             // 
-            // amostrasToolStripMenuItem
+            // cientistaToolStripMenuItem
             // 
-            amostrasToolStripMenuItem.Name = "amostrasToolStripMenuItem";
-            amostrasToolStripMenuItem.Size = new Size(180, 22);
-            amostrasToolStripMenuItem.Text = "Amostras";
-            amostrasToolStripMenuItem.Click += amostrasToolStripMenuItem_Click;
+            cientistaToolStripMenuItem.Name = "cientistaToolStripMenuItem";
+            cientistaToolStripMenuItem.Size = new Size(65, 20);
+            cientistaToolStripMenuItem.Text = "Cientista";
             // 
             // Menu
             // 
@@ -112,5 +127,7 @@
         private ToolStripMenuItem capturaToolStripMenuItem;
         private ToolStripMenuItem fichaAnestesicaToolStripMenuItem;
         private ToolStripMenuItem amostrasToolStripMenuItem;
+        private ToolStripMenuItem biometriaToolStripMenuItem;
+        private ToolStripMenuItem cientistaToolStripMenuItem;
     }
 }

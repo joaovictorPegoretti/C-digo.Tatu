@@ -33,11 +33,19 @@ namespace Tatu
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start();
 
-        } 
+        }
         private void amostrasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
             f1 = new Thread(Abrir_Amostras!);
+            f1.SetApartmentState(ApartmentState.STA);
+            f1.Start();
+        }
+        
+        private void biometriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            f1 = new Thread(Abrir_Biometria!);
             f1.SetApartmentState(ApartmentState.STA);
             f1.Start();
         }
@@ -63,6 +71,11 @@ namespace Tatu
         {
             Application.Run();
         }
-       
+
+        private void Abrir_Biometria(object obj)
+        {
+            Application.Run(new Biometria());
+        }
+
     }
 }

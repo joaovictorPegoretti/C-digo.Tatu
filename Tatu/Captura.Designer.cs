@@ -36,11 +36,12 @@
             txtbox_Horario = new TextBox();
             button_cancelar = new Button();
             button_salvar = new Button();
-            groupBox1 = new GroupBox();
+            groupBox_Aviso = new GroupBox();
             label1 = new Label();
             button_Box_Não = new Button();
             button_Box_Sim = new Button();
-            groupBox1.SuspendLayout();
+            button_Proximo = new Button();
+            groupBox_Aviso.SuspendLayout();
             SuspendLayout();
             // 
             // text_Local
@@ -109,18 +110,18 @@
             button_salvar.Text = "Salvar";
             button_salvar.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // groupBox_Aviso
             // 
-            groupBox1.BackColor = SystemColors.ButtonHighlight;
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(button_Box_Não);
-            groupBox1.Controls.Add(button_Box_Sim);
-            groupBox1.Location = new Point(346, 144);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(231, 83);
-            groupBox1.TabIndex = 8;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Aviso";
+            groupBox_Aviso.BackColor = SystemColors.ButtonHighlight;
+            groupBox_Aviso.Controls.Add(label1);
+            groupBox_Aviso.Controls.Add(button_Box_Não);
+            groupBox_Aviso.Controls.Add(button_Box_Sim);
+            groupBox_Aviso.Location = new Point(346, 144);
+            groupBox_Aviso.Name = "groupBox_Aviso";
+            groupBox_Aviso.Size = new Size(231, 83);
+            groupBox_Aviso.TabIndex = 8;
+            groupBox_Aviso.TabStop = false;
+            groupBox_Aviso.Text = "Aviso";
             // 
             // label1
             // 
@@ -151,12 +152,23 @@
             button_Box_Sim.UseVisualStyleBackColor = true;
             button_Box_Sim.Click += button_Box_Sim_Click;
             // 
+            // button_Proximo
+            // 
+            button_Proximo.Location = new Point(230, 163);
+            button_Proximo.Name = "button_Proximo";
+            button_Proximo.Size = new Size(75, 23);
+            button_Proximo.TabIndex = 9;
+            button_Proximo.Text = "Próximo";
+            button_Proximo.UseVisualStyleBackColor = true;
+            button_Proximo.Click += button_Proximo_Click;
+            // 
             // Captura
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(groupBox1);
+            Controls.Add(button_Proximo);
+            Controls.Add(groupBox_Aviso);
             Controls.Add(button_salvar);
             Controls.Add(button_cancelar);
             Controls.Add(txtbox_Horario);
@@ -167,8 +179,8 @@
             Controls.Add(text_Local);
             Name = "Captura";
             Text = "Captura";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            groupBox_Aviso.ResumeLayout(false);
+            groupBox_Aviso.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -183,9 +195,10 @@
         private TextBox txtbox_Horario;
         private Button button_cancelar;
         private Button button_salvar;
-        private GroupBox groupBox1;
+        private GroupBox groupBox_Aviso;
         private Button button_Box_Não;
         private Button button_Box_Sim;
         private Label label1;
+        private Button button_Proximo;
     }
 }
