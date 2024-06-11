@@ -4,13 +4,16 @@
     <Compile Update="Amostras.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Biometria.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Captura.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Ficha Anestesica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Ficha_de_campo.cs">
+    <Compile Update="Ficha_do_Tatu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">
