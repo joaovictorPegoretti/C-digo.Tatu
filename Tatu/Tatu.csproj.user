@@ -19,10 +19,10 @@
     <Compile Update="Ficha Anestesica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Ficha_do_Tatu.cs">
+    <Compile Update="Ficha do Tatu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

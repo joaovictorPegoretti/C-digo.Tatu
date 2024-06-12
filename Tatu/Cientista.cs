@@ -12,9 +12,12 @@ namespace Tatu
 {
     public partial class Cientista : Form
     {
+        Thread f1;
         public Cientista()
         {
             InitializeComponent();
+            groupBox_Aviso_Salvo.Visible = false;
+            groupBox_Aviso_Cancelar.Visible = false;
         }
 
         private void button_Salvar_Click(object sender, EventArgs e)
@@ -23,10 +26,55 @@ namespace Tatu
             string email_cientista = txtBox_Email.Text;
             string telefone_cientista = txtBox_Telefone.Text;
 
+            if (groupBox_Aviso_Salvo.Visible == true)
+            {
+                groupBox_Aviso_Salvo.Visible = false;
+            }
+            else
+            {
+                groupBox_Aviso_Salvo.Location = new Point(315, 178);
+                groupBox_Aviso_Salvo.Visible = true;
+            }
+
         }
 
         private void button_Cancelar_Click(object sender, EventArgs e)
         {
+            if (groupBox_Aviso_Cancelar.Visible == true)
+            {
+                groupBox_Aviso_Cancelar.Visible = false;
+            }
+            else
+            {
+                groupBox_Aviso_Cancelar.Visible = true;
+            }
+        }
+
+        private void button_Sim_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBox_Sim_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            f1 = new Thread(Abrir_Menu!);
+            f1.SetApartmentState(ApartmentState.STA);
+            f1.Start();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Controls.Remove(groupBox_Aviso_Salvo);
+            this.Close();
+            f1 = new Thread(Abrir_Menu!);
+            f1.SetApartmentState(ApartmentState.STA);
+            f1.Start();
+        }
+
+        private void buttonBox_Cancelar_Click(object sender, EventArgs e)
+        {
+            Controls.Remove(groupBox_Aviso_Cancelar);
             ClearControl(this);
         }
 
@@ -40,6 +88,15 @@ namespace Tatu
             }
         }
 
+        private void Abrir_Menu(object obj)
+        {
+            Application.Run(new Menu());
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

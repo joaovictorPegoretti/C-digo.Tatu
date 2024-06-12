@@ -42,3 +42,5 @@ C:\Users\joqhdvhvdnv\source\repos\C-digo.Tatu\Tatu\obj\Debug\net8.0-windows\refi
 C:\Users\joqhdvhvdnv\source\repos\C-digo.Tatu\Tatu\obj\Debug\net8.0-windows\Tatu.pdb
 C:\Users\joqhdvhvdnv\source\repos\C-digo.Tatu\Tatu\obj\Debug\net8.0-windows\Tatu.genruntimeconfig.cache
 C:\Users\joqhdvhvdnv\source\repos\C-digo.Tatu\Tatu\obj\Debug\net8.0-windows\ref\Tatu.dll
+C:\Users\joqhdvhvdnv\source\repos\C-digo.Tatu\Tatu\obj\Debug\net8.0-windows\Tatu.Cientista.resources
+C:\Users\joqhdvhvdnv\source\repos\C-digo.Tatu\Tatu\obj\Debug\net8.0-windows\Tatu.Equipe.resources

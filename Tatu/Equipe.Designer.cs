@@ -38,11 +38,21 @@
             label4 = new Label();
             button_Salvar = new Button();
             button_Cancelar = new Button();
+            label5 = new Label();
+            groupBox_Aviso_Cancelar = new GroupBox();
+            buttonBox_Cancelar = new Button();
+            buttonBox_Sim = new Button();
+            label11 = new Label();
+            groupBox_Aviso_Salvo = new GroupBox();
+            button_ok = new Button();
+            label6 = new Label();
+            groupBox_Aviso_Cancelar.SuspendLayout();
+            groupBox_Aviso_Salvo.SuspendLayout();
             SuspendLayout();
             // 
             // txtBox_Equipe
             // 
-            txtBox_Equipe.Location = new Point(144, 52);
+            txtBox_Equipe.Location = new Point(128, 75);
             txtBox_Equipe.Name = "txtBox_Equipe";
             txtBox_Equipe.Size = new Size(232, 23);
             txtBox_Equipe.TabIndex = 1;
@@ -50,16 +60,16 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(27, 55);
+            label1.Location = new Point(41, 78);
             label1.Name = "label1";
-            label1.Size = new Size(111, 15);
+            label1.Size = new Size(43, 15);
             label1.TabIndex = 2;
-            label1.Text = "Equipe responsável:";
+            label1.Text = "Nome:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(47, 116);
+            label2.Location = new Point(31, 139);
             label2.Name = "label2";
             label2.Size = new Size(65, 15);
             label2.TabIndex = 3;
@@ -67,7 +77,7 @@
             // 
             // txtBox_Instituicao
             // 
-            txtBox_Instituicao.Location = new Point(144, 108);
+            txtBox_Instituicao.Location = new Point(128, 131);
             txtBox_Instituicao.Name = "txtBox_Instituicao";
             txtBox_Instituicao.Size = new Size(232, 23);
             txtBox_Instituicao.TabIndex = 4;
@@ -75,7 +85,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(52, 177);
+            label3.Location = new Point(36, 200);
             label3.Name = "label3";
             label3.Size = new Size(53, 15);
             label3.TabIndex = 5;
@@ -83,14 +93,14 @@
             // 
             // txtBox_Contato
             // 
-            txtBox_Contato.Location = new Point(144, 172);
+            txtBox_Contato.Location = new Point(128, 195);
             txtBox_Contato.Name = "txtBox_Contato";
             txtBox_Contato.Size = new Size(232, 23);
             txtBox_Contato.TabIndex = 6;
             // 
             // txtBox_Observacao
             // 
-            txtBox_Observacao.Location = new Point(144, 238);
+            txtBox_Observacao.Location = new Point(128, 261);
             txtBox_Observacao.Multiline = true;
             txtBox_Observacao.Name = "txtBox_Observacao";
             txtBox_Observacao.Size = new Size(285, 99);
@@ -99,7 +109,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(47, 241);
+            label4.Location = new Point(31, 264);
             label4.Name = "label4";
             label4.Size = new Size(72, 15);
             label4.TabIndex = 7;
@@ -125,11 +135,98 @@
             button_Cancelar.UseVisualStyleBackColor = true;
             button_Cancelar.Click += button_Cancelar_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 15F);
+            label5.Location = new Point(31, 18);
+            label5.Name = "label5";
+            label5.Size = new Size(180, 28);
+            label5.TabIndex = 12;
+            label5.Text = "Equipe responsável";
+            // 
+            // groupBox_Aviso_Cancelar
+            // 
+            groupBox_Aviso_Cancelar.BackColor = SystemColors.ButtonHighlight;
+            groupBox_Aviso_Cancelar.Controls.Add(buttonBox_Cancelar);
+            groupBox_Aviso_Cancelar.Controls.Add(buttonBox_Sim);
+            groupBox_Aviso_Cancelar.Controls.Add(label11);
+            groupBox_Aviso_Cancelar.Font = new Font("Segoe UI", 9F);
+            groupBox_Aviso_Cancelar.Location = new Point(553, 195);
+            groupBox_Aviso_Cancelar.Name = "groupBox_Aviso_Cancelar";
+            groupBox_Aviso_Cancelar.Size = new Size(235, 109);
+            groupBox_Aviso_Cancelar.TabIndex = 26;
+            groupBox_Aviso_Cancelar.TabStop = false;
+            groupBox_Aviso_Cancelar.Text = "Aviso";
+            // 
+            // buttonBox_Cancelar
+            // 
+            buttonBox_Cancelar.Location = new Point(20, 79);
+            buttonBox_Cancelar.Name = "buttonBox_Cancelar";
+            buttonBox_Cancelar.Size = new Size(128, 23);
+            buttonBox_Cancelar.TabIndex = 3;
+            buttonBox_Cancelar.Text = "Cancelar o Cientista";
+            buttonBox_Cancelar.UseVisualStyleBackColor = true;
+            buttonBox_Cancelar.Click += buttonBox_Cancelar_Click;
+            // 
+            // buttonBox_Sim
+            // 
+            buttonBox_Sim.Location = new Point(154, 79);
+            buttonBox_Sim.Name = "buttonBox_Sim";
+            buttonBox_Sim.Size = new Size(75, 23);
+            buttonBox_Sim.TabIndex = 1;
+            buttonBox_Sim.Text = "Sim";
+            buttonBox_Sim.UseVisualStyleBackColor = true;
+            buttonBox_Sim.Click += buttonBox_Sim_Click;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(6, 36);
+            label11.Name = "label11";
+            label11.Size = new Size(208, 30);
+            label11.TabIndex = 0;
+            label11.Text = "Você deseja cancelar a equipe e voltar \r\npara o menu?";
+            // 
+            // groupBox_Aviso_Salvo
+            // 
+            groupBox_Aviso_Salvo.BackColor = SystemColors.ButtonHighlight;
+            groupBox_Aviso_Salvo.Controls.Add(button_ok);
+            groupBox_Aviso_Salvo.Controls.Add(label6);
+            groupBox_Aviso_Salvo.Location = new Point(553, 65);
+            groupBox_Aviso_Salvo.Name = "groupBox_Aviso_Salvo";
+            groupBox_Aviso_Salvo.Size = new Size(200, 100);
+            groupBox_Aviso_Salvo.TabIndex = 27;
+            groupBox_Aviso_Salvo.TabStop = false;
+            groupBox_Aviso_Salvo.Text = "Aviso";
+            // 
+            // button_ok
+            // 
+            button_ok.Location = new Point(119, 71);
+            button_ok.Name = "button_ok";
+            button_ok.Size = new Size(75, 23);
+            button_ok.TabIndex = 1;
+            button_ok.Text = "Ok";
+            button_ok.UseVisualStyleBackColor = true;
+            button_ok.Click += button_ok_Click;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(12, 35);
+            label6.Name = "label6";
+            label6.Size = new Size(149, 15);
+            label6.TabIndex = 0;
+            label6.Text = "Dados salvos com sucesso!";
+            // 
             // Equipe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(groupBox_Aviso_Salvo);
+            Controls.Add(groupBox_Aviso_Cancelar);
+            Controls.Add(label5);
             Controls.Add(button_Salvar);
             Controls.Add(button_Cancelar);
             Controls.Add(txtBox_Observacao);
@@ -142,6 +239,10 @@
             Controls.Add(txtBox_Equipe);
             Name = "Equipe";
             Text = "Equipe";
+            groupBox_Aviso_Cancelar.ResumeLayout(false);
+            groupBox_Aviso_Cancelar.PerformLayout();
+            groupBox_Aviso_Salvo.ResumeLayout(false);
+            groupBox_Aviso_Salvo.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -157,5 +258,13 @@
         private Label label4;
         private Button button_Salvar;
         private Button button_Cancelar;
+        private Label label5;
+        private GroupBox groupBox_Aviso_Cancelar;
+        private Button buttonBox_Cancelar;
+        private Button buttonBox_Sim;
+        private Label label11;
+        private GroupBox groupBox_Aviso_Salvo;
+        private Button button_ok;
+        private Label label6;
     }
 }
