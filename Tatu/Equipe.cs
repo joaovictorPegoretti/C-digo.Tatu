@@ -83,10 +83,30 @@ namespace Tatu
             }
         }
 
+        private void button_Sim_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            f1 = new Thread(Abrir_Cientista!);
+            f1.SetApartmentState(ApartmentState.STA);
+            f1.Start();
+        }
+
+        private void button_Não_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            f1 = new Thread(Abrir_Menu!);
+            f1.SetApartmentState(ApartmentState.STA);
+            f1.Start();
+        }
+
+        private void Abrir_Cientista(object obj)
+        {
+            Application.Run(new Cientista());
+        }
+
         private void Abrir_Menu(object obj)
         {
             Application.Run(new Menu());
         }
-
     }
 }

@@ -46,8 +46,13 @@
             groupBox_Aviso_Salvo = new GroupBox();
             button_ok = new Button();
             label6 = new Label();
+            groupBox_Aviso_Proximo = new GroupBox();
+            button_Não = new Button();
+            button_Sim = new Button();
+            label10 = new Label();
             groupBox_Aviso_Cancelar.SuspendLayout();
             groupBox_Aviso_Salvo.SuspendLayout();
+            groupBox_Aviso_Proximo.SuspendLayout();
             SuspendLayout();
             // 
             // txtBox_Equipe
@@ -152,7 +157,7 @@
             groupBox_Aviso_Cancelar.Controls.Add(buttonBox_Sim);
             groupBox_Aviso_Cancelar.Controls.Add(label11);
             groupBox_Aviso_Cancelar.Font = new Font("Segoe UI", 9F);
-            groupBox_Aviso_Cancelar.Location = new Point(553, 195);
+            groupBox_Aviso_Cancelar.Location = new Point(549, 281);
             groupBox_Aviso_Cancelar.Name = "groupBox_Aviso_Cancelar";
             groupBox_Aviso_Cancelar.Size = new Size(235, 109);
             groupBox_Aviso_Cancelar.TabIndex = 26;
@@ -193,7 +198,7 @@
             groupBox_Aviso_Salvo.BackColor = SystemColors.ButtonHighlight;
             groupBox_Aviso_Salvo.Controls.Add(button_ok);
             groupBox_Aviso_Salvo.Controls.Add(label6);
-            groupBox_Aviso_Salvo.Location = new Point(553, 65);
+            groupBox_Aviso_Salvo.Location = new Point(549, 151);
             groupBox_Aviso_Salvo.Name = "groupBox_Aviso_Salvo";
             groupBox_Aviso_Salvo.Size = new Size(200, 100);
             groupBox_Aviso_Salvo.TabIndex = 27;
@@ -219,11 +224,57 @@
             label6.TabIndex = 0;
             label6.Text = "Dados salvos com sucesso!";
             // 
+            // groupBox_Aviso_Proximo
+            // 
+            groupBox_Aviso_Proximo.BackColor = SystemColors.ButtonHighlight;
+            groupBox_Aviso_Proximo.Controls.Add(button_Não);
+            groupBox_Aviso_Proximo.Controls.Add(button_Sim);
+            groupBox_Aviso_Proximo.Controls.Add(label10);
+            groupBox_Aviso_Proximo.Font = new Font("Segoe UI", 9F);
+            groupBox_Aviso_Proximo.Location = new Point(549, 29);
+            groupBox_Aviso_Proximo.Name = "groupBox_Aviso_Proximo";
+            groupBox_Aviso_Proximo.Size = new Size(200, 100);
+            groupBox_Aviso_Proximo.TabIndex = 28;
+            groupBox_Aviso_Proximo.TabStop = false;
+            groupBox_Aviso_Proximo.Text = "Aviso";
+            // 
+            // button_Não
+            // 
+            button_Não.Location = new Point(38, 67);
+            button_Não.Name = "button_Não";
+            button_Não.RightToLeft = RightToLeft.No;
+            button_Não.Size = new Size(75, 23);
+            button_Não.TabIndex = 2;
+            button_Não.Text = "Não";
+            button_Não.UseVisualStyleBackColor = true;
+            button_Não.Click += button_Não_Click;
+            // 
+            // button_Sim
+            // 
+            button_Sim.Location = new Point(119, 67);
+            button_Sim.Name = "button_Sim";
+            button_Sim.Size = new Size(75, 23);
+            button_Sim.TabIndex = 1;
+            button_Sim.Text = "Sim";
+            button_Sim.UseVisualStyleBackColor = true;
+            button_Sim.Click += button_Sim_Click;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 9F);
+            label10.Location = new Point(6, 30);
+            label10.Name = "label10";
+            label10.Size = new Size(149, 15);
+            label10.TabIndex = 0;
+            label10.Text = "Deseja registrar o cientista?";
+            // 
             // Equipe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(groupBox_Aviso_Proximo);
             Controls.Add(groupBox_Aviso_Salvo);
             Controls.Add(groupBox_Aviso_Cancelar);
             Controls.Add(label5);
@@ -243,6 +294,8 @@
             groupBox_Aviso_Cancelar.PerformLayout();
             groupBox_Aviso_Salvo.ResumeLayout(false);
             groupBox_Aviso_Salvo.PerformLayout();
+            groupBox_Aviso_Proximo.ResumeLayout(false);
+            groupBox_Aviso_Proximo.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -266,5 +319,9 @@
         private GroupBox groupBox_Aviso_Salvo;
         private Button button_ok;
         private Label label6;
+        private GroupBox groupBox_Aviso_Proximo;
+        private Button button_Não;
+        private Button button_Sim;
+        private Label label10;
     }
 }

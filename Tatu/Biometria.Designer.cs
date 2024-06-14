@@ -221,9 +221,9 @@
             label10.Font = new Font("Segoe UI", 9F);
             label10.Location = new Point(6, 30);
             label10.Name = "label10";
-            label10.Size = new Size(155, 15);
+            label10.Size = new Size(140, 15);
             label10.TabIndex = 0;
-            label10.Text = "Deseja registrar a biometria?";
+            label10.Text = "Deseja registrar a equipe?";
             // 
             // groupBox_Aviso_Salvo
             // 

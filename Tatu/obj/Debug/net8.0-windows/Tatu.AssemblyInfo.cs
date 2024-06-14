@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tatu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce265f236ee6a5b726368bededaea48adcb4f446")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+061ebf3412b0dda829edc01a043d6d5a46967acb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tatu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tatu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
