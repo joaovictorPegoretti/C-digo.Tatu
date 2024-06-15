@@ -20,7 +20,7 @@ identificação do tatu, mas também informações breves sobre sua saúde caso 
 #Tecnologias utilizadas
 
 <ul>
-  <li><a href="https://dotnet.microsoft.com/pt-br/languages/csharp">C# - Linguagem de programação</a></li>
+  <li><a href="https://dotnet.microsoft.com/pt-br/languages/csharp">C#</a> - Linguagem de programação</li>
   <li><a href="https://learn.microsoft.com/pt-br/dotnet/desktop/winforms/overview/?view=netdesktop-8.0">Windows Forms</a> - Estrutura de Interface</li>
 </ul>
 
@@ -28,6 +28,6 @@ identificação do tatu, mas também informações breves sobre sua saúde caso 
 <ul>
   <li><a href="https://github.com/EduardoCansian">Eduardo Cansian Rodrigues</a></li>
   <li>Eduardo Romanelli De Assis</li>
-  <li>João Victor Marcarini Pegoretti</li>
+  <li><a href="https://github.com/joaovictorPegoretti">João Victor Marcarini Pegoretti</a></li>
   <li><a href="https://github.com/samuel-tb">Samuel Thompson Barbosa</a></li>
 </ul>
