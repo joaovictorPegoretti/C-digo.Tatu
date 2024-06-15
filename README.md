@@ -1,6 +1,6 @@
 <h1>TolyID</h1>
 
-<p> Descrição: O TolyID é a construção, elaboração e desenvolvimento de um aplicativo que tem por princípio cadastrar e identificar informações específicas sobre a espécie do tatu-bola-do-nordeste (Tolypeutes tricinctus) por meio dos padrões distintos encontrados em seus escudos cranianos. Além disso, o aplicativo funcionaria como uma base de dados, fornecendo não apenas a 
+<p>O TolyID é a construção, elaboração e desenvolvimento de um aplicativo que tem por princípio cadastrar e identificar informações específicas sobre a espécie do tatu-bola-do-nordeste (Tolypeutes tricinctus) por meio dos padrões distintos encontrados em seus escudos cranianos. Além disso, o aplicativo funcionaria como uma base de dados, fornecendo não apenas a 
 identificação do tatu, mas também informações breves sobre sua saúde caso o animal tenha sido capturado para coleta de amostras.</p>
 
 # Funcionalidades
@@ -27,7 +27,7 @@ identificação do tatu, mas também informações breves sobre sua saúde caso 
 # Responsáveis pelo projeto
 <ul>
   <li><a href="https://github.com/EduardoCansian">Eduardo Cansian Rodrigues</a></li>
-  <li>Eduardo Romanelli De Assis</li>
+  <li><a href="https://github.com/edurromanelli">Eduardo Romanelli De Assis</a></li>
   <li><a href="https://github.com/joaovictorPegoretti">João Victor Marcarini Pegoretti</a></li>
   <li><a href="https://github.com/samuel-tb">Samuel Thompson Barbosa</a></li>
 </ul>
