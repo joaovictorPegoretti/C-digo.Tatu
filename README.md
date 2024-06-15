@@ -6,7 +6,7 @@
 
 # Funcionalidades
 
-  <p>O app tem vários recursos que podem ser acessados pelo <span href="https://github.com/joaovictorPegoretti/C-digo.Tatu/blob/287aa5f7a97c290c876a0b80ec71b61449d21dc9/Tatu/Menu.cs">menu de opções</span> as opções disponíveis são: </p>
+  <p>O app tem vários recursos que podem ser acessados pelo <span link="https://github.com/joaovictorPegoretti/C-digo.Tatu/blob/287aa5f7a97c290c876a0b80ec71b61449d21dc9/Tatu/Menu.cs">menu de opções</span> as opções disponíveis são: </p>
 
 •	Ficha do Tatu – utilizada para cadastrar ou mostrar as informações do tatu
 •	Ficha Anestésica – utilizada para cadastrar ou mostrar a ficha anestésica utilizada no tatu
