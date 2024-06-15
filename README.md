@@ -8,7 +8,7 @@ identificação do tatu, mas também informações breves sobre sua saúde caso 
   <p>O app tem vários recursos que podem ser acessados pelo <a href="https://github.com/joaovictorPegoretti/TolyID/blob/c5456eeebd167ee3712e606faee143b5b588fac2/Tatu/Menu.cs">menu de opções</a>, as opções disponíveis são: </p>
 
 <ul>
-    <li>•	<a href="https://github.com/joaovictorPegoretti/TolyID/blob/41f03bc73550d0c9dbfd28730e10994ac7f98f0c/Tatu/Ficha%20do%20Tatu.cs">Ficha do Tatu</a>Ficha do Tatu – utilizada para cadastrar ou mostrar as informações do tatu</li>
+    <li>•	<a href="https://github.com/joaovictorPegoretti/TolyID/blob/41f03bc73550d0c9dbfd28730e10994ac7f98f0c/Tatu/Ficha%20do%20Tatu.cs">Ficha do Tatu</a> – utilizada para cadastrar ou mostrar as informações do tatu</li>
     <li>•	<a href="https://github.com/joaovictorPegoretti/TolyID/blob/41f03bc73550d0c9dbfd28730e10994ac7f98f0c/Tatu/Ficha%20Anestesica.cs">Ficha Anestésica</a> – utilizada para cadastrar ou mostrar a ficha anestésica utilizada no tatu</li>
     <li>•	<a href="https://github.com/joaovictorPegoretti/TolyID/blob/41f03bc73550d0c9dbfd28730e10994ac7f98f0c/Tatu/Equipe.cs">Equipe</a> – Classe utilizada para cadastrar ou mostrar a equipe que fez a captura do tatu</li>
     <li>•	<a href="https://github.com/joaovictorPegoretti/TolyID/blob/41f03bc73550d0c9dbfd28730e10994ac7f98f0c/Tatu/Cientista.cs">Cientista</a> – Classe utilizada para cadastrar ou mostrar as pessoas que trabalham na equipe que capturou</li>
@@ -22,6 +22,7 @@ identificação do tatu, mas também informações breves sobre sua saúde caso 
 <ul>
   <li><a href="https://dotnet.microsoft.com/pt-br/languages/csharp">C#</a> - Linguagem de programação</li>
   <li><a href="https://learn.microsoft.com/pt-br/dotnet/desktop/winforms/overview/?view=netdesktop-8.0">Windows Forms</a> - Estrutura de Interface</li>
+  <li><a href="https://www.postgresql.org/">Postgreesql</a> - Banco de dados </li>
 </ul>
 
 # Responsáveis pelo projeto
