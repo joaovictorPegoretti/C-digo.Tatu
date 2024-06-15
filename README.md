@@ -17,14 +17,14 @@ identificação do tatu, mas também informações breves sobre sua saúde caso 
    <li> •	<a href="https://github.com/joaovictorPegoretti/TolyID/blob/41f03bc73550d0c9dbfd28730e10994ac7f98f0c/Tatu/Biometria.cs">Biometria</a>– Classe utilizada para cadastrar ou mostrar a biometria correspondente ao tatu</li>
 </ul>
 
-#Tecnologias utilizadas
+# Tecnologias utilizadas
 
 <ul>
   <li><a href="https://dotnet.microsoft.com/pt-br/languages/csharp">C#</a> - Linguagem de programação</li>
   <li><a href="https://learn.microsoft.com/pt-br/dotnet/desktop/winforms/overview/?view=netdesktop-8.0">Windows Forms</a> - Estrutura de Interface</li>
 </ul>
 
-#Responsáveis pelo projeto
+# Responsáveis pelo projeto
 <ul>
   <li><a href="https://github.com/EduardoCansian">Eduardo Cansian Rodrigues</a></li>
   <li>Eduardo Romanelli De Assis</li>
